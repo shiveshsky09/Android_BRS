@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sky.learn.Register"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="7"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/emailTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/email"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <EditText
+                android:id="@+id/nameTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/name"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <EditText
+                android:id="@+id/passTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/pwd"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <EditText
+                android:id="@+id/repeatpassTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/repeatpwd"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <EditText
+                android:id="@+id/mobileTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/mobile"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/regbtn"
+                android:background="@color/navbarblue"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

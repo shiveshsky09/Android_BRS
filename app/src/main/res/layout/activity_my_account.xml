@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:context="com.example.sky.learn.MyAccount">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+                android:layout_weight="80"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="8">
+            <EditText
+                android:id="@+id/emailTxt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <EditText
+                android:id="@+id/passTxt"
+                android:password="true"
+                android:inputType="textPassword"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/pwd"
+
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#000000"
+                android:background="@color/navbarblue"
+                android:text="@string/loginbtn"/>
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:paddingTop="5dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="2.5dp">
+                    <Button
+                        android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/forgotpwd"
+                        android:textColor="#000000"
+                        android:background="@color/navbarblue"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:paddingLeft="2.5dp"
+                    android:layout_height="match_parent">
+                    <Button
+                    android:id="@+id/regBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:background="@color/navbarblue"
+                    android:text="@string/regbtn"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

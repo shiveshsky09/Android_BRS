@@ -1,0 +1,441 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sky.learn.AboutUs">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <!--dividing image and text-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+    <ImageView
+        android:layout_weight="40"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bookimage"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"/>
+
+<LinearLayout
+    android:layout_weight="60"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical">
+        <!--text content-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="60"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="100">
+
+       <!--dividing contact and book info-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:weightSum="100">
+<!--0-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:text="------BOOK INFORMATION------"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <!--1-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/BookName"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--2-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view0"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="AUTHOR :"
+
+                    android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/AuthorName"
+        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+</android.support.v7.widget.CardView>
+            <!--3-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PUBLICATION :"
+
+                android:layout_gravity="center_horizontal" />
+
+             <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/Publication"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--4-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="EDITION :"
+                    android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/Edition"
+        android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--5-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="RENT :"
+                     />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/rentprice" />
+</LinearLayout>
+            </android.support.v7.widget.CardView>
+                <!--6-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="DURATION :"
+                     />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/rentduration" />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--7-->
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="BRANCH :"
+                    android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/Branch"
+        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+                <!--8-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view6"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="SUBJECT :"
+                    android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/Subject"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+            </android.support.v7.widget.CardView>
+   <!--9-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view7"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ADV_ID :"
+                    android:layout_gravity="right" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/advno"
+        android:layout_gravity="right" />
+</LinearLayout>
+</android.support.v7.widget.CardView>
+                <!--10-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_weight="10"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ADV_DATE :"
+
+                    android:layout_gravity="right" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/addate"
+        android:layout_gravity="right" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+<!--contact layout-->
+        <android.support.v7.widget.CardView
+            android:layout_weight="20"
+            android:id="@+id/card_view9"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPadding="10dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="------CONTACT INFORMATION------"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/mobileTxt"
+        android:layout_gravity="right"
+        android:autoLink="phone"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/emailTxt"
+        android:layout_gravity="right"
+        android:autoLink="email"/>
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

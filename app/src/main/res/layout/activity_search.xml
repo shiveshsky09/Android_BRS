@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sky.learn.SearchActivity"
+    android:orientation="vertical">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c0ca33">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/myaddLinear"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/navbarblue"
+            android:weightSum="100"
+            android:gravity="center">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="SEARCH BOOKS"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+                <EditText
+                    android:layout_weight="70"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="Which Book do you want?"
+                    android:id="@+id/BookName"/>
+                <Button
+                    android:layout_weight="30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="GO"
+                    android:background="@color/primaryColor"
+                    android:id="@+id/search"/>
+
+            </LinearLayout>
+                    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/myaddLinear"
+            android:id="@+id/addsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</LinearLayout>

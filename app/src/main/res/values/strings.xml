@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">BooksHive</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">search</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_submit_add">Submit Add</string>
+    <string name="title_activity_favourites">Favourites</string>
+    <string name="title_activity_my_account">MyAccount</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_about_app">AboutApp</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">Login</string>
+    <string name="email">Your Email</string>
+    <string name="pwd">Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="regbtn">REGISTER</string>
+    <string name="forgotpwd">Forgot Password?</string>
+    <string name="name">Name</string>
+    <string name="repeatpwd">Repeat Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="title_activity_my_profile">MyProfile</string>
+    <string name="title_activity_get_subject">GetSubject</string>
+    <string name="branch">Select Branch</string>
+    <string name="subject">Select Subject</string>
+    <string-array name="branch_arrays">
+        <item>Select Branch</item>
+        <item>Computer_Science</item>
+        <item>Civil</item>
+        <item>Chemical</item>
+        <item>Mechanical</item>
+        <item>Electronics</item>
+        <item>IT</item>
+        <item>Ceramics</item>
+    </string-array>
+    <string name="title_activity_display_adds">DisplayAdds</string>
+    <string name="title_activity_view_add_more">ViewAddMore</string>
+    <string name="title_activity_update_profile">UpdateProfile</string>
+    <string name="title_activity_my_adds">MyAdds</string>
+
+
+</resources>

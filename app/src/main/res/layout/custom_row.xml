@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_bg"
+    android:clickable="true"
+    android:layout_width="match_parent" android:layout_height="48dp"
+    android:weightSum="100">
+<ImageView
+    android:padding="5dp"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/listIcon"
+    android:layout_centerVertical="true"
+    android:layout_weight="20"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+
+    android:src="@android:drawable/star_on"/>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:textSize="22sp"
+        android:layout_centerVertical="true"
+        android:layout_weight="80"
+        android:id="@+id/listtext"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Dummy Text"
+        android:textColor="#000000"/>
+</LinearLayout>

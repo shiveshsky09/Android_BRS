@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sky.learn.Favourites">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor">
+        <LinearLayout
+            android:id="@+id/TextLinearFav"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/navbarblue"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="My Favourites"
+                android:id="@+id/favtextView"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/TextLinearFav"
+            android:id="@+id/favList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</LinearLayout>
